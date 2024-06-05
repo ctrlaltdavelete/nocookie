@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "priority": 1,
+        "action": {
+            "type": "redirect",
+            "redirect": {
+                "transform": {
+                    "host": "www.youtube-nocookie.com"
+                }
+            }
+        },
+        "condition": {
+            "urlFilter": "||youtube.com/*",
+            "resourceTypes": [
+                "main_frame"
+            ]
+        }
+    }
+]

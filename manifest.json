@@ -4,14 +4,9 @@
     "version": "1.0.0",
     "description": "Automatically watch all youtube videos with no ads AKA nocookie",
     "permissions": [
-        "webRequest",
-        "webRequestBlocking",
         "declarativeNetRequest",
-        "declarativeNetRequestWithHostAccess",
         "activeTab",
-        "tabs",
-        "http://*/",
-        "https://*/"
+        "tabs"
     ],
     "background": {
         "service_worker": "src/background.js"
@@ -28,8 +23,13 @@
             "128": "images/nocookie-128.png"
         }
     },
-    "host_permissions": [
-        "http://*/",
-        "https://*/"
-    ]
+    "declarative_net_request": {
+        "rule_resources": [
+            {
+                "id": "nocookie_rules",
+                "enabled": true,
+                "path": "rules.json"
+            }
+        ]
+    }
 }
