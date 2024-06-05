@@ -25,7 +25,7 @@
     "action": {
         "default_popup": "popup.html",
         "default_icon": {
-          "48": "icon.png"
+          "128": "images/nocookie-128.png"
         }
     },
     "host_permissions": [
