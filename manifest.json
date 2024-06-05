@@ -9,7 +9,7 @@
         "tabs"
     ],
     "background": {
-        "service_worker": "src/background.js"
+        "service_worker": "scripts/background.js"
     },
     "icons": {
         "16": "images/nocookie-16.png",
@@ -18,7 +18,7 @@
         "128": "images/nocookie-128.png"
     },
     "action": {
-        "default_popup": "src/popup/nocookie.html",
+        "default_popup": "popup/nocookie.html",
         "default_icon": {
             "128": "images/nocookie-128.png"
         }
