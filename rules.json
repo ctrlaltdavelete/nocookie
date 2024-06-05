@@ -5,13 +5,12 @@
         "action": {
             "type": "redirect",
             "redirect": {
-                "transform": {
-                    "host": "www.youtube-nocookie.com"
-                }
+                "regexSubstitution": "https://www.youtube-nocookie.com/embed/\\2"
             }
         },
         "condition": {
-            "urlFilter": "||youtube.com/*",
+            "urlFilter": "||youtube.com/watch*",
+            "regexFilter": "^https?:\\/\\/(www\\.)?youtube\\.com\\/watch\\?v=([^&]+).*",
             "resourceTypes": [
                 "main_frame"
             ]
