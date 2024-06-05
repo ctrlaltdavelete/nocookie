@@ -1,0 +1,35 @@
+{
+    "manifest_version": 3,
+    "name": "nocookie",
+    "version": "1.0.0",
+    "description": "Automatically watch all youtube videos with no ads AKA nocookie",
+    "permissions": [
+        "webRequest",
+        "webRequestBlocking",
+        "declarativeNetRequest",
+        "declarativeNetRequestWithHostAccess",
+        "activeTab",
+        "tabs",
+        "http://*/",
+        "https://*/"
+    ],
+    "background": {
+        "service_worker": "src/background.js"
+    },
+    "icons": {
+      "16": "images/nocookie-16.png",
+      "32": "images/nocookie-32.png",
+      "48": "images/nocookie-48.png",
+      "128": "images/nocookie-128.png"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+          "48": "icon.png"
+        }
+    },
+    "host_permissions": [
+        "http://*/",
+        "https://*/"
+    ]
+}
