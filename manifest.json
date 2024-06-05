@@ -17,15 +17,15 @@
         "service_worker": "src/background.js"
     },
     "icons": {
-      "16": "images/nocookie-16.png",
-      "32": "images/nocookie-32.png",
-      "48": "images/nocookie-48.png",
-      "128": "images/nocookie-128.png"
+        "16": "images/nocookie-16.png",
+        "32": "images/nocookie-32.png",
+        "48": "images/nocookie-48.png",
+        "128": "images/nocookie-128.png"
     },
     "action": {
-        "default_popup": "popup.html",
+        "default_popup": "src/popup/nocookie.html",
         "default_icon": {
-          "128": "images/nocookie-128.png"
+            "128": "images/nocookie-128.png"
         }
     },
     "host_permissions": [
