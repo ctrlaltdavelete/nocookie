@@ -9,7 +9,6 @@
             }
         },
         "condition": {
-            "urlFilter": "||youtube.com/watch*",
             "regexFilter": "^https?:\\/\\/(www\\.)?youtube\\.com\\/watch\\?v=([^&]+).*",
             "resourceTypes": [
                 "main_frame"
